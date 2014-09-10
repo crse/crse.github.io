@@ -2,69 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <div id="googlemaps"></div>
     <link rel="icon" type="image/png" href="favicon.png"/>
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script type="text/javascript">
-    // The latitude and longitude of your business / place
-    var position = [-6.267566, 106.641779];
-    function showGoogleMaps() {
-    var latLng = new google.maps.LatLng(position[0], position[1]);
-    var mapOptions = {
-    zoom: 16, // initialize zoom level - the max value is 21
-    streetViewControl: false, // hide the yellow Street View pegman
-    scaleControl: false, // allow users to zoom the Google Map
-    mapTypeId: google.maps.MapTypeId.SATELLITE,
-    center: latLng
-    };
-    map = new google.maps.Map(document.getElementById('googlemaps'),
-    mapOptions);
-    // Show the default red marker at the location
-    marker = new google.maps.Marker({
-    position: latLng,
-    map: map,
-    draggable: false,
-    animation: google.maps.Animation.DROP
-    });
-    }
-    google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-    </script>
-    <script type="text/javascript">
-    // This function gets the current time and injects it into the DOM
-    function updateClock() {
-    // Gets the current time
-    var now = new Date();
-    // Get the hours, minutes and seconds from the current time
-    var hours = now.getHours();
-    var minutes = now.getMinutes();
-    var seconds = now.getSeconds();
-    // Format hours, minutes and seconds
-    if (hours < 10) {
-    hours = "0" + hours;
-    }
-    if (minutes < 10) {
-    minutes = "0" + minutes;
-    }
-      if (seconds < 10) {
-    seconds = "0" + seconds;
-    }
-    // Gets the element we want to inject the clock into
-    var elem = document.getElementById('clock');
-    // Sets the elements inner HTML value to our clock data
-    elem.innerHTML = hours + ':' + minutes + ':' + seconds;
-    }
-    </script>
     <title>Christian "Sei" Elbrianno</title></title>
-      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,700">
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="pagestyle.css">
   </head>
-  <body onload="setInterval('updateClock()', 200);">
-    <div class="clock">
-    <span style="color: #fff;" align="center">
-    <h1 id="clock"></h1>
-    </span>
-    <br>
+  <body>
       </div>
       <div class="bio">
       <span style="color: #fff;">
