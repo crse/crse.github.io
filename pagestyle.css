@@ -1,7 +1,7 @@
 body{
 font-family: 'Roboto Slab', serif;
 }
-.bio{
+.title{
 width:600px;
 height:200px;
 position:absolute;
@@ -9,10 +9,10 @@ top:0;
 left:0;
 right:0;
 bottom:0;
-margin:auto;
+margin-top:200;
 text-align:center;
 }
-h2{
+.sns{
 width:600px;
 height:200px;
 position:absolute;
