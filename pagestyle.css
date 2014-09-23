@@ -1,25 +1,64 @@
 body{
-font-family: 'Dosis', sans-serif;
+font-family:calibri;
+background:URL("back.jpg");
+}
+.fclogo{
+margin-top:-9px;
+margin-left:30px;
+float:center;
+}
+.photo{
+margin-top:-245px;
+width:250px;
+height:250px;
+}
+.backlgt{
+background:URL("backlgt.png");
+margin-top:30px;
+margin-left:-10px;
+margin-right:-10px;
+opacity:0.9;
 }
 .title{
-width:600px;
-height:200px;
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-margin-top:200;
 text-align:center;
+font-family:bebas;
+font-size:60px;
+color:white;
+font-weight:light;
+text-shadow: 0px 1px 0px #c7c8ca, 0px 2px 0px #b1b3b6, 0px 3px 0px #9d9fa2, 0px 4px 0px #8a8c8e, 0px 5px 0px #77787b, 0px 6px 0px #636466, 0px 7px 0px #4d4d4f, 0px 8px 7px #001135;
 }
-.sns{
-width:600px;
-height:200px;
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-margin:auto;
+.title .subs{
+font-weight:bold;
+}
+.subtitle{
 text-align:center;
+font-family:kozuka gothic pro;
+font-size:30px;
+letter-spacing:3px;
 }
+.project{
+font-family:kozuka gothic pro;
+text-shadow: 0px 1px 10px #c7c8ca, 9px 2px 5px #b1b3b6, 0px 0px 1px #9d9fa2;
+color:#fff;
+}
+.text{
+text-align:center;
+font-family:calibri;
+color:white;
+text-shadow: 0px 1px 0px #c7c8ca, 9px 2px 5px #b1b3b6, 0px 3px 1px #9d9fa2;
+}
+.linknext{
+text-shadow: 0px 1px 0px #c7c8ca, 9px 2px 5px #b1b3b6, 0px 3px 1px #9d9fa2;
+margin-left:10px;
+}
+a:link, a:active, a:visited{
+color:white;
+font-style:normal;
+text-shadow: 0px 1px 0px #c7c8ca, 9px 2px 5px #b1b3b6, 0px 3px 1px #9d9fa2;
+}
+a:hover{
+opacity:0.5;
+}
+.star{
+color:yellow;
+text-shadow: 0px 1px 10px #C4B001, 9px 2px 5px #9C8C01, 9px 3px 1px #595001;
