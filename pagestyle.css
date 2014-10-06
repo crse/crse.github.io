@@ -50,13 +50,27 @@ text-shadow: 0px 1px 0px #c7c8ca, 9px 2px 5px #b1b3b6, 0px 3px 1px #9d9fa2;
 .linknext{
 text-shadow: 0px 1px 0px #c7c8ca, 9px 2px 5px #b1b3b6, 0px 3px 1px #9d9fa2;
 margin-left:10px;
+text-decoration:none;
 }
-a:link, a:active, a:visited{
+.linknext a:link, a:active, a:visited{
 color:white;
 font-style:normal;
 text-shadow: 0px 1px 0px #c7c8ca, 9px 2px 5px #b1b3b6, 0px 3px 1px #9d9fa2;
 }
-a:hover{
+.linknext a:hover{
+opacity:0.5;
+}
+.sns{
+text-shadow: 0px 1px 0px #c7c8ca, 9px 2px 5px #b1b3b6, 0px 3px 1px #9d9fa2;
+margin-left:10px;
+text-decoration:none;
+}
+.sns a:link, a:active, a:visited{
+color:white;
+font-style:normal;
+text-shadow: 0px 1px 0px #c7c8ca, 9px 2px 5px #b1b3b6, 0px 3px 1px #9d9fa2;
+}
+.sns a:hover{
 opacity:0.5;
 }
 .star{
