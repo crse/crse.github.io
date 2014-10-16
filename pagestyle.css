@@ -12,7 +12,7 @@ position:fixed;
 margin-top:-245px;
 width:250px;
 height:250px;
-position:fixed;
+position:absolute;
 }
 .backlgt{
 background:URL("backlgt.png");
