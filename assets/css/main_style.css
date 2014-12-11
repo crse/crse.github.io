@@ -5,6 +5,11 @@ html, body{
 height:100%;
 margin:0%;
 padding:0%;
+-ms-user-select:none;
+-moz-user-select:none;
+-o-user-select:none;
+-webkit-user-select:none;
+user-select:none;
 }
 body{
 font-size:14px;
