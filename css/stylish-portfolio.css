@@ -272,8 +272,8 @@ ul.feature-icons li:before {
 #logo-pic {
     z-index: 1;
     position: absolute;
-    top: 0px;
-    left: -12px;
+    top: 12px;
+    left: 0px;
     border-top-width: 0px;
     padding-top: 0px;
 }
