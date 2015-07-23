@@ -440,7 +440,7 @@ element {
 }
 
 @media (min-width: 751px) {
-	.project, .skill, .about, .portfolio, .contact, footer {
+	.project, .skill, .about, .portfolio, .contact{
 		margin-left: 70px
 	}
 	.pp {margin-left: 40px}
@@ -450,7 +450,7 @@ element {
 	#header {
 		display: none;
 	}
-	.project, .skill, .about, .portfolio, .contact, footer {
+	.project, .skill, .about, .portfolio, .contact{
 		margin-left: 0px
 	}
 	.pp {margin-left: 0px}
@@ -468,6 +468,7 @@ element {
     color: rgb(255, 255, 255);
     box-shadow: -0.25em 0px 0.25em 0px rgba(0, 0, 0, 0.1) inset;
     text-align: center;
+	z-index: 10;
 }
 #header .icons {
     font-size: 1.5em;
@@ -581,10 +582,17 @@ element {
 }
 
 #menu-toggle {
-    z-index: 1;
+    z-index: 20;
     position: fixed;
     top: 0;
     right: 0;
+	color:aqua;
+	text-shadow: 0px 1px #009C40, 0px 0px 2px #009C40, 0px 0px 4px #009C40, 0px 0px 8px #009C40;
+}
+
+#menu-toggle:hover {
+	color:#222629;
+	text-shadow: none;
 }
 
 #sidebar-wrapper.active {
@@ -659,14 +667,15 @@ i.sizing-button{
     background-size: auto;
     -o-background-size: auto;
     background-attachment: fixed;
+	z-index: 11;
 }
 
 .ico{
-    color: #1CFF94;
+    text-shadow: none;
 }
 
 .ico:hover{
-    color: #117948;
+    text-shadow: 0px 0px 1px #009C40, 0px 0px 2px #009C40, 0px 0px 4px #009C40, 0px 0px 8px #009C40;
 }
 
 .img-main {
@@ -882,6 +891,415 @@ i.sizing-button{
 /* Footer */
 
 footer {
-    padding: 100px 0;
 	background: #171A19 url("../img/pat-gr.png") repeat fixed 0% 0%;
+	height: 100%;
+	width: 100%;
+	display: table;
+	position: relative;
+	z-index: 0;
+}
+
+@media (min-width: 751px) {
+	footer {
+		padding-left: 70px;
+	}
+}
+	
+@media (max-width: 750px) {
+	footer {
+		padding-left: 0;
+	}
+}
+@media (min-height: 700px) {
+	footer {
+		padding-top: 160px;
+	}
+}
+
+@media (max-height: 699px) {
+	footer {
+		padding-top: 100px;
+	}
+}
+		
+@media (max-height: 660px) {
+	footer {
+		padding-top: 75px;
+	}
+}
+
+@media (max-height: 480px) {
+	footer {
+		padding-top: 40px;
+	}
+}
+
+
+
+
+
+.lf1 {margin-left: 1px}
+.lf2 {margin-left: 2px}
+.lf3 {margin-left: 3px}
+.lf4 {margin-left: 4px}
+.lf5 {margin-left: 5px}
+.lf6 {margin-left: 6px}
+.lf7 {margin-left: 7px}
+.lf8 {margin-left: 8px}
+.lf9 {margin-left: 9px}
+.lf10 {margin-left: 10px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.change {
+  width: 237px;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: 'Dosis';
+  color: #ecf0f1;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -118px;
+}
+.change:before {
+  content: '[';
+  position: absolute;
+  left: -30px;
+  line-height: 40px;
+}
+.change:after {
+  content: ']';
+  position: absolute;
+  right: -30px;
+  line-height: 40px;
+}
+.change:after,
+.change:before {
+  color: #16a085;
+  font-size: 42px;
+  animation: 2s linear 0s normal none infinite opacity;
+  -webkit-animation: 2s ease-out 0s normal none infinite opacity;
+  -moz-animation: 2s ease-out 0s normal none infinite opacity;
+  -o-animation: 2s ease-out 0s normal none infinite opacity;
+}
+.visible {
+  float: left;
+  font-weight: 600;
+  overflow: hidden;
+  height: 40px;
+}/*
+p {
+  display: inline;
+  float: left;
+  margin: 0;
+}*/
+.px{
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+
+
+.visible ul {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  animation: 6s linear 0s normal none infinite change;
+  -webkit-animation: 6s linear 0s normal none infinite change;
+  -moz-animation: 6s linear 0s normal none infinite change;
+  -o-animation: 6s linear 0s normal none infinite change;
+}
+.visible ul li {
+  line-height: 40px;
+  margin: 0;
+}
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes change {
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -80px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  75% {
+    margin-top: -40px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes change {
+  0% {
+    margin-top: 0;
+  }
+  15% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -40px;
+  }
+  40% {
+    margin-top: -40px;
+  }
+  50% {
+    margin-top: -80px;
+  }
+  65% {
+    margin-top: -80px;
+  }
+  75% {
+    margin-top: -40px;
+  }
+  85% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.glitch {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(37px, 9999px, 66px, 0);
+  }
+  5% {
+    clip: rect(5px, 9999px, 48px, 0);
+  }
+  10% {
+    clip: rect(6px, 9999px, 32px, 0);
+  }
+  15.0% {
+    clip: rect(49px, 9999px, 70px, 0);
+  }
+  20% {
+    clip: rect(66px, 9999px, 3px, 0);
+  }
+  25% {
+    clip: rect(3px, 9999px, 11px, 0);
+  }
+  30.0% {
+    clip: rect(25px, 9999px, 90px, 0);
+  }
+  35% {
+    clip: rect(27px, 9999px, 93px, 0);
+  }
+  40% {
+    clip: rect(10px, 9999px, 44px, 0);
+  }
+  45% {
+    clip: rect(10px, 9999px, 6px, 0);
+  }
+  50% {
+    clip: rect(58px, 9999px, 88px, 0);
+  }
+  55.0% {
+    clip: rect(32px, 9999px, 10px, 0);
+  }
+  60.0% {
+    clip: rect(39px, 9999px, 65px, 0);
+  }
+  65% {
+    clip: rect(41px, 9999px, 15px, 0);
+  }
+  70% {
+    clip: rect(5px, 9999px, 98px, 0);
+  }
+  75% {
+    clip: rect(84px, 9999px, 52px, 0);
+  }
+  80% {
+    clip: rect(48px, 9999px, 90px, 0);
+  }
+  85.0% {
+    clip: rect(37px, 9999px, 90px, 0);
+  }
+  90% {
+    clip: rect(99px, 9999px, 6px, 0);
+  }
+  95% {
+    clip: rect(55px, 9999px, 9px, 0);
+  }
+  100% {
+    clip: rect(9px, 9999px, 76px, 0);
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 4px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: #171A19;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(13px, 9999px, 83px, 0);
+  }
+  5% {
+    clip: rect(53px, 9999px, 22px, 0);
+  }
+  10% {
+    clip: rect(69px, 9999px, 35px, 0);
+  }
+  15.0% {
+    clip: rect(94px, 9999px, 56px, 0);
+  }
+  20% {
+    clip: rect(69px, 9999px, 9px, 0);
+  }
+  25% {
+    clip: rect(68px, 9999px, 95px, 0);
+  }
+  30.0% {
+    clip: rect(12px, 9999px, 26px, 0);
+  }
+  35% {
+    clip: rect(79px, 9999px, 80px, 0);
+  }
+  40% {
+    clip: rect(59px, 9999px, 84px, 0);
+  }
+  45% {
+    clip: rect(100px, 9999px, 72px, 0);
+  }
+  50% {
+    clip: rect(70px, 9999px, 49px, 0);
+  }
+  55.0% {
+    clip: rect(13px, 9999px, 43px, 0);
+  }
+  60.0% {
+    clip: rect(87px, 9999px, 100px, 0);
+  }
+  65% {
+    clip: rect(75px, 9999px, 47px, 0);
+  }
+  70% {
+    clip: rect(44px, 9999px, 69px, 0);
+  }
+  75% {
+    clip: rect(86px, 9999px, 75px, 0);
+  }
+  80% {
+    clip: rect(7px, 9999px, 64px, 0);
+  }
+  85.0% {
+    clip: rect(16px, 9999px, 25px, 0);
+  }
+  90% {
+    clip: rect(36px, 9999px, 100px, 0);
+  }
+  95% {
+    clip: rect(58px, 9999px, 17px, 0);
+  }
+  100% {
+    clip: rect(24px, 9999px, 95px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -4px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: #171A19;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
 }
