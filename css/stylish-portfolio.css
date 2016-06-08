@@ -9,7 +9,7 @@
 
 html,
 body {
-    color: #000;
+    color: #777;
     width: 100%;
     height: 100%;
     user-select: none;
@@ -57,10 +57,20 @@ body {
     font-family: "Kozuka Gothic Pr6N";
 }
 
-h5, h3 {
-    font-size: 20px;
-    color: #000;
+@media (max-width:450px) {h5{letter-spacing: 0}}
+@media (min-width:451px) {h5{letter-spacing: 10px}}
+
+h3, h5 {
+    font-size:3.5875rem;
+    color: #333;
+	line-height: 2.25;
+	font-family:Calibri,Arial,Roboto,sans-serif;
+	font-weight: 200;
 }
+
+@media (max-width: 372px) {h3{letter-spacing: 5px;}}
+@media (min-width: 373px) {h3{letter-spacing: 9px;}}
+
 
 h4{
     font-size: 25px;
@@ -166,7 +176,7 @@ font-weight: 900;
 
 .rd-neon {text-shadow: 0px 0px 8px #9c0000}
 
-.semiblack {color: #3f3f3f}
+.semiblack {color: #777}
 .blck {color: #222629}
 
 /* ====================================
@@ -342,8 +352,9 @@ font-weight: 900;
   width:100%;
 }*/
 
-
-
+#logo{
+	margin-top: 10px;
+}
 
 #logo-pic {
     z-index: 1;
@@ -432,7 +443,6 @@ font-weight: 900;
 }
 
 .btn-dark {
-    background-color: #222629;
     border-radius: 0;
     color: #fff;
     background-color: #333;
@@ -546,7 +556,7 @@ element {
 #header {
     position: fixed;
     top: 0px;
-    left: 6px;
+    left: 0px;
     height: 100%;
     background: #F3F3F3;
     color: rgb(255, 255, 255);
@@ -669,12 +679,11 @@ element {
     position: fixed;
     top: 0;
     right: 0;
-	color:aqua;
-	text-shadow: 0px 1px #009C40, 0px 0px 2px #009C40, 0px 0px 4px #009C40, 0px 0px 8px #009C40;
+	color:#1CFF94;
 }
 
 #menu-toggle:hover {
-	color:#222629;
+	color:#f3f3f3;
 	text-shadow: none;
 }
 
@@ -708,7 +717,7 @@ i.sizing-button{
     display: block;
     height: 5em;
     left: 50%;
-    margin: 0px 0px 0px -5em;
+    margin: 0px 0px 0px -60px;
     overflow: hidden;
     position: absolute;
     text-indent: 10em;
@@ -773,9 +782,15 @@ i.sizing-button{
 	font-size: 30px;
 }
 
+.skill, .project, .portfolio {
+	padding: 120px 0;
+}
+
 .about, .skill, .project, .portfolio {
 	padding: 90px 0;
 }
+
+h2 {letter-spacing: 3.5px}
 
 /* About */
 
@@ -783,6 +798,8 @@ i.sizing-button{
     background-color: #f3f3f3;
 }
 
+@media (min-width:1190px) {.bio {margin: 3px 0 0 -28.5px;}}
+@media (min-width:1190px) {span.in-image {visibility: hidden;}}
 
 .x1 h3{margin-top: 13px;}
 .x2 h3{margin-top: 3px;}
@@ -796,12 +813,48 @@ i.sizing-button{
 .in-image{
 	position: relative;
 	margin-left: -100px;
-	letter-spacing: 15px;
+	color: #ffffff;
 	position: absolute;
 	font-size: 18px;
 	background-color: rgba(128, 239, 0, 0.49);
-	text-shadow: 1.25px 0px 0px #71E6E6, -1.25px 0px 0px #F871B5;
+	text-shadow: 1.75px 0px 0px #71E6E6, -1.75px 0px 0px #F871B5;
 }
+
+
+
+
+
+
+.about-desc {
+  margin-left: 70px;
+  position: relative;
+}
+
+.about-item {
+  color: #0eb493;
+  float: left;
+  padding: 10px 13px;
+	margin-right: 20px;
+}
+
+.about-desc h1 {
+  color: #777;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.x1 h1{margin-top: 13px;}
+.x2 h1{margin-top: 3px;}
+
+.about-icon{
+  border: 1px solid #0eb493;
+  border-radius: 0;
+  color: #0eb493;
+  float: left;
+}
+
+
+
 
 .q0{padding: 10px 12px;}
 .q1{padding: 10px 13px;}
@@ -811,10 +864,34 @@ i.sizing-button{
 .q5{padding: 10px 11px;}
 
 
+
+
+
+
+.hobby-tt {
+font-size: 45px;
+font-weight: 100;
+color: #3f3f3f;
+position: absolute;
+white-space: nowrap;
+-webkit-transform: rotate(-900deg);
+transform: rotate(-90deg);
+-webkit-transform-origin: 100% 120%;
+transform-origin: 100% 120%;
+z-index: 3;
+letter-spacing: 5px;
+margin: -115px 0 0 -95px;
+}
+
+
+
+
+
+
 /* Services-skill */
 
 .skill {
-	background: #f3f3f3 url("../img/pat-pr.png") repeat fixed 0% 0%;
+	background: #f3f3f3;
 }
 
 .skill-item {
@@ -902,6 +979,7 @@ i.sizing-button{
 	background: #1CFF94;
     width: 120px;
     position: absolute;
+	color: #222629;
 	-webkit-transform: skew(10deg);
 	-moz-transform: skew(-10deg);
 	-o-transform: skew(-10deg);
@@ -944,26 +1022,6 @@ border-spacing: 15px;
 	background: url(../img/NH1nLsV-invert.png) repeat fixed center center;
 	padding: 125px 0 125px 0;
 }
-    
-/*gallery*/
-.portfolio-item {
-    margin: 0px -15px 0px;
-    padding: 0px;
-}
-
-.port-base {
-    margin: 0px -40px 20px;
-}
-
-
-/*porfolio*/
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.59;
-}
 
 /* Call to Action */
 
@@ -977,33 +1035,13 @@ border-spacing: 15px;
     margin: 10px;
 }
 
-/* Map */
-
-.map {
-    height: 500px;
-    margin-left: 70px;
-    background-image: url(../img/graphy.png);
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
 
 /* Footer */
 
 footer {
-	background: #171A19 url("../img/pat-gr.png") repeat fixed 0% 0%;
-	height: 100%;
-	width: 100%;
-	display: table;
-	position: relative;
-	z-index: 0;
+	background: #f2f2f2;
+    padding: 100px 0;
+    margin-left: 70px;
 }
 
 @media (min-width: 751px) {
@@ -1037,61 +1075,94 @@ footer {
 
 @media (max-height: 480px) {
 	footer {
-		padding-top: 40px;
+		padding-top: 40px;	
 	}
 }
 
+@media (max-height: 500px) {.naviclick {margin-top: 80px;}}
+@media (min-height: 501px) {.naviclick {margin-top: 100px;}}
+@media (min-height: 550px) {.naviclick {margin-top: 125px;}}
+@media (min-height: 580px) {.naviclick {margin-top: 175px;}}
+@media (min-height: 750px) {.naviclick {margin-top: 198px;}}
+@media (min-height: 767px) {.naviclick {margin-top: 220px;}}
 
-
-
-
-.lf1 {margin-left: 1px}
-.lf2 {margin-left: 2px}
-.lf3 {margin-left: 3px}
-.lf4 {margin-left: 4px}
-.lf5 {margin-left: 5px}
-.lf6 {margin-left: 6px}
-.lf7 {margin-left: 7px}
-.lf8 {margin-left: 8px}
-.lf9 {margin-left: 9px}
-.lf10 {margin-left: 10px}
+.lf1 {margin-left: 1px;}
+.lf2 {margin-left: 2px;}
+.lf3 {margin-left: 3px;}
+.lf4 {margin-left: 4px;}
+.lf5 {margin-left: 5px;}
+.lf6 {margin-left: 6px;}
+.lf7 {margin-left: 7px;}
+.lf8 {margin-left: 8px;}
+.lf9 {margin-left: 9px;}
+.lf10 {margin-left: 10px;}
 
 .mighty{z-index:99999}
 
-#siderman, #siderman-x {
+.siderman, .siderman-x {
     height: 100%;
-    position: fixed;
     background: transparent linear-gradient(to bottom, #1CFF94 0%, #35c771 90%, #009c40 100%) repeat scroll 0% 0%;
     width: 6px;
 }
 
-#siderman {z-index: 50000; left: 0px;}
-#siderman-x {z-index: 15; right: 0px;}
+.siderman {z-index: 50000; left: 0px;}
+.siderman-x {z-index: 15; right: 0px;}
 
+.big {font-size: 17.5pt; margin: 10px 0 10px 0;}
+.smally {font-size: 15.5px; letter-spacing: 2px;}
 
+.a1 {margin-top: 40px;}
+.b2 {margin-top: 80px; margin-left: -153.5px}
+.c3 {margin-top: 120px;}
+.d4 {margin-top: 160px; margin-left: -126.75px}
+.e5 {margin-top: 200px;}
 
-
-
-
-
-
-
-
-
-.animated.unpx::before {
-
-    height: 1px;
-
+.button {padding: 10px 16px;
+	font-size: 31px;
+	line-height: 1.33;
+	border-radius: 0;
+    background-color: transparent;
+	letter-spacing: 0;
+	font-weight: 900;
 }
-.animated::before {
 
-    transition: max-width 0.3s ease 0s;
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    max-width: 0px;
-    height: 2px;
-    background: #2645FF none repeat scroll 0% 0%;
+.ig {box-shadow: 0px 0px 0px 5px #6d2340 inset; color: #6d2340 !important; font-family:serif;}
+
+.da {box-shadow: 0px 0px 0px 5px #009c40 inset; color: #009c40 !important; font-family:Dosis;}
+
+.pxv {box-shadow: 0px 0px 0px 5px #0083d4 inset; color: #0083d4 !important;}
+
+
+
+.social-links {
+  margin-top: 5%;
+	padding: 0;
 }
+
+.social-links li {
+	display: inline-block;
+}
+
+.social-links li a {
+  color: #777;
+  display: block;
+  margin: 0 6px;
+}
+
+.social-links li a:hover {
+  color: #009c40;
+}
+
+ul {list-style: none}
+
+a {color: #777777}
+a:hover {color: #009c40}
+
+.fb:hover {color: #03329a}
+.linkedin:hover {color: #062560}
+.tm:hover {color: #223844}
+.in:hover {color: #7200a5}
+.gi:hover {color: #222629}
+.de:hover {color: #0076ff}
+.re:hover {color: #d94300}
+.ls:hover {color: #d61000}
