@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/crse
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://crse.github.io
+  * I am crse (https://keybase.io/crse) on keybase.
+  * I have a public key ASCTVfGEuB7Sa48VFNPQCtS-_pL_TvvEMzfkv9fVkRWlQQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209355f184b81ed26b8f1514d3d00ad4befe92ff4efbc43337e4bfd7d59115a5410a",
+      "host": "keybase.io",
+      "kid": "01209355f184b81ed26b8f1514d3d00ad4befe92ff4efbc43337e4bfd7d59115a5410a",
+      "uid": "b4e64e052635b9349f391c5b0edfa519",
+      "username": "crse"
+    },
+    "merkle_root": {
+      "ctime": 1547715873,
+      "hash": "9e3d5e93333c78d4340e926cd7a0f1c4d8449a76946783419bade616ce8fa2c9d7bdfddcdca5d364548622a8e71b5edebb766e06f9d154164ae17ae391eb108e",
+      "hash_meta": "cd6c24772b897e2cf5df5f4733bd66234b0531dc5a489da7060558983d8b0284",
+      "seqno": 4442599
+    },
+    "service": {
+      "entropy": "W1UmeDcyE5ADF8ctSnKZafRo",
+      "hostname": "crse.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.13.1"
+  },
+  "ctime": 1547715883,
+  "expire_in": 504576000,
+  "prev": "71cf68ebf51ada98dff9fbcee87f8d01485cfa14ba81a50c5ccd72ed9594faa0",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgk1XxhLge0muPFRTT0ArUvv6S/077xDM35L/X1ZEVpUEKp3BheWxvYWTESpcCCcQgcc9o6/Ua2pjf+fvO6H+NAUhc+hS6gaUMXM1y7ZWU+qDEIB7SVaQPDDsn8rY53VM5VHqKZFolt+3L/KqkuIARl19/AgHCo3NpZ8RAWHtuzuZf9qzagIL+3YfUQNO5K837D9vOzFzAmFJ37iFTQgU1DwGimIHUVq9bJ+HmLySxDBRWcrXaBOSsbMRiAqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMO0lT8p7OCHMiLx1PvAxKJzjiAGQAgd+2f+Klrgx2YNo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/crse
+
+==================================================================
